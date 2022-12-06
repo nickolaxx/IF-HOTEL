@@ -1,0 +1,355 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: gainsboro;
+    width: 99vw;
+    min-width: 580px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    width: 100vw;
+}
+
+header ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+header a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    width: 110px;
+    display: inline-block;
+}
+
+header a:hover{
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+#inicial{
+    background: url(../imagens/hotel\ \(1\).jpg) no-repeat center;
+    background-size: cover ;
+    height: 70vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inicial h2{
+    font-size: 36px;
+    margin: 2%;
+}
+
+
+#inicial a{
+    width: 150px;
+    height: 42px;
+    line-height: 40px;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+
+    animation-name: botao;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+.Explore{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: none;
+}
+
+#inicial a:hover{
+    background: rgba(0,0,0,0.6);
+    transition: 0.5s;
+}
+
+@keyframes botao{
+    0%{
+       transform: translatex(0);
+    }
+    25%{
+        transform: translatex(30px);
+
+    }
+    50%{
+        transform: translatex(0);
+
+    }
+    75%{
+        transform: translatex(30px);
+
+    }
+    100%{        
+        transform: translatex(0px);
+    }
+  
+
+}
+
+#Reservar{
+    background: #6f7075 ;
+    color: white;
+    width: 80vw;
+    height: 15vh;
+    border-radius: 8px;
+    margin: -7.5vh auto 0vh;
+    display: flex;
+    justify-content: space-around ;
+    justify-items: center;
+    align-items: center;
+
+}
+
+#Reservar div{
+    width: 40%;
+}
+
+#Reservar input[type="date"]{
+    width: 95%;
+    border-radius: 8px;
+    border: none;
+    font-size: 2em;
+    text-align: center;
+}
+
+#Reservar input[type="submit"]{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white; 
+    font-size: 18px;
+}
+
+#Reservar h3{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+#Reservar p{
+    font-size: 0.8em;
+
+}
+
+
+#reservar div{
+    width: 40%;
+}
+
+#reservar input[type="date"]{
+    width: 95%;
+    border-radius: 8px;
+    border: none;
+    font-size: 2em;
+    text-align: center;
+}
+
+#reservar input[type="submit"]{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid  whitesmoke;
+    color: white;
+    font-size: 20px;
+}
+
+#quartos{
+    color: black;
+    height: 45vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1830px;
+}
+
+#quartos .quarto-imagem{
+    display: flex;
+    height: 30vh;
+}
+
+.suite {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1%;
+    width: 25vw;
+}
+
+.suite h6,h4{
+    font-weight: 400;
+}
+
+.suite h4{
+    font-size: 20px;
+}
+
+.suite h6{
+    font-size: 14px;
+}
+
+.suite img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.suite img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#servicos{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 45vh;
+}
+
+#servicos .nossos-servicos{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nossos-servicos div{
+    background: gainsboro;
+    width: 30vw;
+    height: 10vh;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+.oferecidos {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.oferecidos:hover{
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.oferecidos p {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.oferecidos img{
+    width: 30%; 
+    transition: 0.2s;
+}
+
+
+#inscrever{
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#inscrever p{
+    font-size: 30px;
+    animation-name: chaqualhar;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes chaqualhar {
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(30px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+#inscrever input{
+    background: chocolate;
+    border: none;
+    color: white;
+    height: 5vh;
+    padding: 2%;
+
+}
+
+#inscrever input[type="text"]{
+    width: 20vw;
+    
+
+}
+#inscrever input[type="email"]{
+    width: 30vw;
+    
+
+}
+#inscrever input[type="submit"]{
+    background: white;
+    color: black;
+    width: 13vw;
+}
+
+#mapa{
+    background: white;
+    width: 100vw;
+    height: 50vh;
+    padding: 1vh 0;
+
+}
+
+.botao{
+    position: fixed;
+    top: 0;
+    right: 2%;
+    height: 100vh;
+}
+
+.botao-home{
+    position: relative;
+    top:85vh;
+    width: 70%;
+}
+
+
+footer{
+    background: #6f7075;
+    color: white;
+    height: 5vh;
+    line-height: 5vh;
+
+}
